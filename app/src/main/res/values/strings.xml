@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">LinearLayout</string>
+    <string name="light2">Light 2</string>
+    <string name="light1">Light 1</string>
+    <string name="fan2">Fan 2</string>
+    <string name="fan1">Fan 1</string>
+</resources>
