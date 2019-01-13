@@ -18,7 +18,9 @@
             android:id="@+id/imageView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            app:srcCompat="@drawable/ecell3" />
+            app:srcCompat="@drawable/ecell3"
+            android:layout_gravity="center"
+            android:contentDescription="@string/ecell_logo"/>
     </LinearLayout>
 
     <LinearLayout
@@ -41,7 +43,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/light1"
-                android:textColor="#fff"/>
+                android:textColor="#fff"
+                android:layout_marginStart="40dp" />
 
             <TextView
                 android:id="@+id/textView2"
@@ -53,7 +56,7 @@
                 android:layout_height="wrap_content"
                 android:text="@string/light2"
                 android:textColor="#fff"
-                />
+                android:layout_marginStart="40dp" />
 
             <TextView
                 android:id="@+id/textView3"
@@ -64,7 +67,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/fan1"
-                android:textColor="#fff"/>
+                android:textColor="#fff"
+                android:layout_marginStart="40dp" />
 
             <TextView
                 android:id="@+id/textView4"
@@ -75,7 +79,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/fan2"
-                android:textColor="#fff"/>
+                android:textColor="#fff"
+                android:layout_marginStart="40dp" />
         </LinearLayout>
 
         <LinearLayout
@@ -90,7 +95,8 @@
                 app:sb_shadow_color="@color/black"
                 app:sb_uncheck_color="@color/green"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp" />
             <com.suke.widget.SwitchButton
                 android:id="@+id/switch2"
                 android:layout_marginLeft="20dp"
@@ -99,7 +105,8 @@
                 app:sb_uncheck_color="@color/green"
                 android:layout_marginTop="34dp"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp" />
             <com.suke.widget.SwitchButton
                 android:id="@+id/switch3"
                 android:layout_marginLeft="20dp"
@@ -108,7 +115,8 @@
                 app:sb_uncheck_color="@color/blue"
                 android:layout_marginTop="34dp"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp" />
             <com.suke.widget.SwitchButton
                 android:id="@+id/switch4"
                 android:layout_marginLeft="20dp"
@@ -117,7 +125,8 @@
                 app:sb_uncheck_color="@color/blue"
                 android:layout_marginTop="34dp"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp" />
         </LinearLayout>
     </LinearLayout>
 
