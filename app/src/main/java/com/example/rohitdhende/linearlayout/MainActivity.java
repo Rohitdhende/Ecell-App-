@@ -49,6 +49,7 @@ public class MainActivity extends AppCompatActivity {
             public void run() {
                 Intent preloader = new Intent(MainActivity.this,Second_Page.class);
                 startActivity(preloader);
+                overridePendingTransition(R.anim.fade_in,R.anim.fade_out);
                 finish();
             }
         },SPLASH_TIME_OUT);

@@ -9,8 +9,11 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
 import android.webkit.WebView;
 import android.widget.TextView;
 
@@ -25,6 +28,7 @@ import java.net.URL;
 public class Second_Page extends AppCompatActivity {
 
     TextView t1,t2,t3,t4;
+//    Animation animBounce;
 
 
     @Override
@@ -62,13 +66,18 @@ public class Second_Page extends AppCompatActivity {
         com.suke.widget.SwitchButton s3 = findViewById(R.id.switch3);
         com.suke.widget.SwitchButton s4 = findViewById(R.id.switch4);
 
+//        animBounce = AnimationUtils.loadAnimation(getApplicationContext(),
+//                R.anim.bounce);
+
+
         s1.setOnCheckedChangeListener(new SwitchButton.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(SwitchButton view, boolean isChecked) {
                 if (isChecked) {
                     /* Switch is led 1 */
                     new Second_Page.Background_get().execute("pin=16&on=1");
-                    t1.setTextColor(Color.parseColor("#00ffff"));
+                    t1.setTextColor(Color.parseColor("#00B2CB"));
+//                    t1.startAnimation(animBounce); (This line is for text animation)
                 } else {
                     new Second_Page.Background_get().execute("pin=16&on=0");
                     t1.setTextColor(Color.parseColor("#ffffff"));
@@ -84,7 +93,8 @@ public class Second_Page extends AppCompatActivity {
                 if (isChecked) {
                     /* Switch is led 1 */
                     new Second_Page.Background_get().execute("pin=5&on=1");
-                    t2.setTextColor(Color.parseColor("#00ffff"));
+                    t2.setTextColor(Color.parseColor("#00B2CB"));
+//                    t2.startAnimation(animBounce);(This line is for text animation)
 
                 } else {
                     new Second_Page.Background_get().execute("pin=5&on=0");
@@ -100,6 +110,7 @@ public class Second_Page extends AppCompatActivity {
                     /* Switch is led 1 */
                     new Second_Page.Background_get().execute("pin=4&on=1");
                     t3.setTextColor(Color.parseColor("#00ff7a"));
+//                    t3.startAnimation(animBounce); (This line is for text animation)
 
                 } else {
                     new Second_Page.Background_get().execute("pin=4&on=0");
@@ -115,6 +126,7 @@ public class Second_Page extends AppCompatActivity {
                     /* Switch is led 1 */
                     new Second_Page.Background_get().execute("pin=2&on=1");
                     t4.setTextColor(Color.parseColor("#00ff7a"));
+//                    t4.startAnimation(animBounce);(This line is for text animation)
                 } else {
                     new Second_Page.Background_get().execute("pin=2&on=0");
                     t4.setTextColor(Color.parseColor("#ffffff"));
