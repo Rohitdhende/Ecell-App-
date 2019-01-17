@@ -5,7 +5,7 @@
     <color name="colorAccent">#D81B60</color>
     <color name="black">#0c0c0c</color>
     <color name="transparent"></color>
-    <color name="blue">#0099ff</color>
+    <color name="blue">#00ffff</color>
     <color name="green">#02e969</color>
     <!--<color name="darkblue">#051a29</color>-->
   </resources>
